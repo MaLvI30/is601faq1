@@ -23,7 +23,7 @@ class UserTest extends TestCase
     public function testQuestions()
     {
         $user = factory(\App\User::class)->make();
-        $this->assertTrue(is_object($user->question()->get()));
+        $this->assertTrue(is_object($user->questions()->get()));
     }
     public function testAnswers()
     {

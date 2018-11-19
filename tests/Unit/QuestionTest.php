@@ -17,8 +17,8 @@ class QuestionTest extends TestCase
     {
         $user = $user = factory(\App\User::class)->make();
         $user->save();
-        $questions = factory(\App\Question::class)->make();
-        $questions->user()->associate($user);
-        $this->assertTrue($questions->save());
+        $question = factory(\App\Question::class)->make();
+        $question->user()->associate($user);
+        $this->assertTrue($question->save());
     }
 }

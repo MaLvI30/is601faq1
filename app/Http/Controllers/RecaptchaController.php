@@ -14,7 +14,7 @@ class RecaptchaController extends Controller
          $client = new Client();
          $response = $client->post('https://www.google.com/recaptcha/api/siteverify', [
              'form_params' => array(
-                 'secret' => '',
+                 'secret' => '6LdUvoEUAAAAANn8AtOidSM60od36gUtGszaw7Do',
                  'response' => $token
              )
          ]);

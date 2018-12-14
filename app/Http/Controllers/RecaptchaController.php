@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class RecaptchaController extends Controller
 {
  public function displayForm( Request $request){
-     
+
      $token = $request->input('g-recaptcha-response');
 
      if ($token) {
